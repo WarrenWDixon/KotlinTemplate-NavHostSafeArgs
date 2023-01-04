@@ -1,6 +1,7 @@
 package com.warrendixon.kotlinnavigationsafeargsdemo
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -24,8 +25,11 @@ class TitleFragment : Fragment() {
 
         var view : View = inflater.inflate(R.layout.fragment_title, container, false)
         startButton = view.findViewById<Button>(R.id.start_button)
+        Log.d("WWD", "title fragment onCreateView")
         startButton.setOnClickListener {
+            Log.d("WWD", "title fragment start button clicked")
             view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
+            Log.d("WWD", "title fragment stasrt button clicked after navigate")
         }
         return view
     }

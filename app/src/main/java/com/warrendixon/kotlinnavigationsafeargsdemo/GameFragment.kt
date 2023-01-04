@@ -17,13 +17,15 @@ import androidx.navigation.findNavController
 class GameFragment : Fragment() {
     private lateinit var gameButton : Button
     private var score = 0
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         var view = inflater.inflate(R.layout.fragment_game, container, false)
-        gameButton.findViewById<Button>(R.id.game_button)
+        Log.d("WWD", "game fragment onCreateView")
+        gameButton = view.findViewById<Button>(R.id.game_button)
         gameButton.setOnClickListener {
             score++
             Log.d("WWD", "the score is $score")
