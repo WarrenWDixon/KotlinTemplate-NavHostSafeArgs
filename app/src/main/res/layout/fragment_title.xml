@@ -31,6 +31,6 @@
         android:text="START"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/game_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
