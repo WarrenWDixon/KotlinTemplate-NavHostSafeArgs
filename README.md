@@ -1,5 +1,5 @@
 # KotlinTemplate-NavHostSafeArgs
-Code Template Using Nav Host Fragment Navigation with Safe Args
+Kotlin demo application that demonstrates Nav Host Fragment Navigation with Safe Args
 
 This project serves as a code template for a Kotlin app based on a main activity with multiple fragments.
 Navigation is done using a navigation graph implementing a navigation controller.
